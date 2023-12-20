@@ -11,8 +11,8 @@ const schema = a.schema({
   Todo: a
     .model({
       content: a.string(),
-+     done: a.boolean(),
-+     priority: a.enum(['low', 'medium', 'high']),
+     done: a.boolean(),
+     priority: a.enum(['low', 'medium', 'high'])
     })
     .authorization([a.allow.owner()]),
 });
